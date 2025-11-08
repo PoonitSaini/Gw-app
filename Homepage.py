@@ -25,11 +25,18 @@ profit_loss_calcultion = st.Page(
 Management = st.Page(
     page="Pages/Profit_Loss_Calculation.py"
 )
+student_issues = st.Page(
+    page="Pages/Student_Issue.py"
+)
+teacher_issues = st.Page(
+    page="Pages/Teacher_Issue.py"
+)
 
 pg = st.navigation(
     {
         "Main":[home_page],
-        "School Calculation":[profit_loss_calcultion]
+        "School Calculation":[profit_loss_calcultion],
+        "Academic Monitoring":[student_issues,teacher_issues]
     }
 )
 
